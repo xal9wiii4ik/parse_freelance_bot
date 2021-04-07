@@ -4,7 +4,15 @@ Bot parser from freelance sites(in our time only 1 category from kwork, im did i
 Bot can automatically mailing parse content, check payment status of the user, mailing about false payment status(every 3 hours, then every three days). 
 You need only change wait_for argument in app.py
 
-HOW INSTALL:
-1) write command: pip install -r requirements.txt
-2) change .env settings
-3) write command: python app.py
+# main libraries:
+1) aiogram
+2) aiohttp
+3) requests
+4) smtp
+5) SQLAlchemy
+
+
+# date the code was written: 27.01.2020
+
+
+P.S. Architacture on all bot projects i took from here: https://github.com/Latand/aiogram-bot-template 
