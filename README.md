@@ -12,7 +12,7 @@ You need only change wait_for argument in app.py
 5) SQLAlchemy
 
 
-# date the code was written: 27.01.2020
+# date the code was written: 11.02.2020
 
 
 P.S. Architacture on all bot projects i took from here: https://github.com/Latand/aiogram-bot-template 
