@@ -18,7 +18,7 @@ PRICES = [
 
 @dp.message_handler(commands=['buy'])
 async def payment_process(message: types.Message):
-    """Процесс оплаты при помощи команды buy, отправка соотвествующего invoice"""
+    """Payment process, and send invoice"""
 
     if not PAYMENTS_TABLE.exist_user(chat_id=message.from_user.id):
         await dp.bot.send_invoice(message.from_user.id,
@@ -48,7 +48,7 @@ async def payment_process(message: types.Message):
 
 @dp.message_handler(content_types=ContentType.SUCCESSFUL_PAYMENT)
 async def successful_payment(message: types.Message):
-    """В случае успешной оплаты добавляем пользователя в базу таблицу payment"""
+    """if payment is true add user to database"""
 
     if PAYMENTS_TABLE.exist_user(chat_id=message.from_user.id):
         PAYMENTS_TABLE.add_new_subscriber(chat_id=message.from_user.id,

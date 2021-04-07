@@ -20,7 +20,7 @@ async def on_shutdown(dp):
 
 
 async def mailing(dp, wait_for):
-    """Рассылка сообщений"""
+    """Mailing messages"""
 
     while True:
         await mailing_manager(dp=dp)
@@ -28,7 +28,7 @@ async def mailing(dp, wait_for):
 
 
 async def update_and_mailing_unpaid_status(wait_for) -> None:
-    """Обновление и рассылка не оплаченного статуса"""
+    """Update and state un payment state"""
 
     while True:
         await payment_manager(dp=dp)

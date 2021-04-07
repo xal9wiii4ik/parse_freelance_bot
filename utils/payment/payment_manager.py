@@ -5,7 +5,7 @@ from loader import PAYMENTS_TABLE
 
 
 def check_unpaid_days(unpaid_day: int) -> bool:
-    """Проверка колличества не оплаченных дней для смены рассылки"""
+    """Checking un payment days"""
 
     day = 10
     while True:
@@ -17,7 +17,7 @@ def check_unpaid_days(unpaid_day: int) -> bool:
 
 
 async def payment_manager(dp):
-    """Мэнеджер по статусе оплаты"""
+    """Manager of payment state"""
 
     # present_date_1 = datetime.now().strftime('%m.%d')
     present_date = datetime.now().strftime('%M')

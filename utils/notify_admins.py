@@ -6,7 +6,6 @@ from data.config import admins
 
 
 async def on_startup_notify(dp: Dispatcher):
-    """Команда при запуске бота"""
 
     for admin in admins:
         try:
@@ -16,7 +15,6 @@ async def on_startup_notify(dp: Dispatcher):
 
 
 async def on_shutdown_notify(dp: Dispatcher):
-    """Команда при остановке бота"""
 
     for admin in admins:
         try:
