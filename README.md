@@ -11,6 +11,7 @@ You need only change wait_for argument in app.py
 4) smtp
 5) SQLAlchemy
 
+# Database MySQL
 
 # date the code was written: 11.02.2021
 
